@@ -25,14 +25,26 @@ public class ValidVoter {
             return;
         }
 
-        if(age <= 0 || age > 150){
-            System.out.println("Please Enter a valid age");
-        }else if(age >=18){
-            System.out.println(userName + " is a valid voter.");
-        }else{
-            System.out.println(userName + " is not a valid voter.");
-            System.out.println(userName + " will be eligible in " + (18-age) + " years.");
-        }
+//        if(age <= 0 || age > 150){
+//            System.out.println("Please Enter a valid age");
+//        }else if(age >=18){
+//            System.out.println(userName + " is a valid voter.");
+//        }else{
+//            System.out.println(userName + " is not a valid voter.");
+//            System.out.println(userName + " will be eligible in " + (18-age) + " years.");
+//        }
+
+//        if(age <= 0 || age > 150){
+//            System.out.println("Please Enter a valid age");
+//        }
+//        else if(age >=18){
+//            System.out.println(userName + " is a valid voter.");
+//        }else if(age <18){
+//            int yearsLeft= 18-age;
+//            System.out.println(userName + " is not a valid voter.");
+//            System.out.println(userName + " will be eligible in " + yearsLeft + " years.");
+//        }
+
 
     }
 }
