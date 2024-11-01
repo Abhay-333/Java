@@ -7,25 +7,24 @@ public class ElectricityBill {
         /* write your code here */
 
         int units = sc.nextInt();
+        double amount = 0.0;
 
         if(units >= 0 && units <=100){
-            double amount = units * 4.2; // Rs.4.2 per unit
-            System.out.println(amount);
+            amount = units * 4.2; // Rs.4.2 per unit
         }else if(units >=101 && units <=200){
             // Rs.6 per unit
-            double amount = units * 6; // Rs.6 per unit
-            System.out.println(amount);
+            amount = 420 + (units - 100) * 6; // Rs.6 per unit
 
         }else if(units >= 201 && units <= 400){
             // Rs.8 per unit
-            double amount = units * 8; // Rs.8 per unit
-            System.out.println(amount);
+            amount = 1020 + (units - 200) * 8; // Rs.8 per unit
 
         }else{
             // Rs.13 per unit
-            double amount = units * 13; // Rs.13 per unit
-            System.out.println(amount);
+            amount = 2620 + (units - 400) * 13; // Rs.13 per unit
         }
+        System.out.printf("%.1f%n",amount);
+//        System.out.println(amount);
 
     }
 }
