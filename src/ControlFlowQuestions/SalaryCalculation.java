@@ -31,7 +31,6 @@ public class SalaryCalculation {
             }else{
                 System.out.println(6000);
             }
-
         }
     }
 }
