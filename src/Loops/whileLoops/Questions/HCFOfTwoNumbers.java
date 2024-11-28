@@ -3,14 +3,9 @@ package Loops.whileLoops.Questions;
 public class HCFOfTwoNumbers {
     public static void main(String[] args) {
 
-        int num1 = 1500;
-        int num2 = 1300;
+        int num1 = 60;
+        int num2 = 48;
         int HCF = 0;
-        int primeFactorOfNum1 = 0;
-        int primeFactorOfNum2 = 0;
-        int HFC = 1;
-        int currentFactorOfNum1 = 2;
-        int currentFactorOfNum2 = 2;
 
         // To find the HCF of two numbers we have to find prime factors of both numbers
         // After finding the prime factors of both the numbers we have to find the common Prime
@@ -22,22 +17,33 @@ public class HCFOfTwoNumbers {
         // HCF = 2*2*5 = 20
 
         if (num1 > num2) {
-            for (int i = 1; i <= num1; i++) {     // i =1,2, 3, 4, 5, 6, 7
-                if (num1 > 1) {
-                    if (num1 % currentFactorOfNum1 == 0) {    /* 750 % 2 = true, 750 % 2 = true, 375 % 2 = false, 375 %
-                        // 3 == 0 = true, 125 % 3 == 0 = false, 125 % 4 == 0 = false, 125 % 5 == 0 = true */
-                        primeFactorOfNum1 = currentFactorOfNum1;    // 2, 2, 3, 5
-                        num1 = num1 / currentFactorOfNum2;      // 750, 750 / 2 = 375, 375 / 3 = 125, 125 / 5 = 25,
-                        System.out.println(num1);
-                        System.out.println(primeFactorOfNum1);
-                    } else {
-                        currentFactorOfNum1++;  // currentFactorOfNum1 = 3,4,5
+            if (num1 > 1) {
+                for (int i = 1; i <= num1; i++) {
+                    if (num1 % i == 0 && num2 % i == 0) {
+                        HCF = i;
                     }
                 }
-
             }
+            System.out.println(HCF);
+        } else if (num2 > num1) {
+            if (num2 > 1) {
+                for (int i = 1; i <= num2; i++) {
+                    if (num2 % i == 0 && num1 % i == 0) {
+                        HCF = i;
+                    }
+                }
+            }
+            System.out.println(HCF);
+        } else if (num1 == num2) {
+            for (int i = 1; i <= num1; i++) {
+                if (num1 % i == 0) {
+                    HCF = i;
+                }
+            }
+            System.out.println(HCF);
+        } else if (num1 == 0 || num2 == 0) {
+            System.out.println(HCF);
         }
-
 
 //        if (num1 > num2) {
 //            if(num1 > 1){
@@ -95,3 +101,56 @@ public class HCFOfTwoNumbers {
 //currentFactorOfNum2++;
 //        }
 //        }
+
+// another approach (incomplete approach)
+//if (num1 > num2) {
+//        for (int i = 1; i <= num1; i++) {     // i =1,2, 3, 4, 5, 6, 7
+//        if (num1 > 1) {
+//        if (num1 % currentFactorOfNum1 == 0) {    /* 750 % 2 = true,
+//                    750 % 2 = true, 375 %
+//                    2 =
+//                    false, 375 %
+//                        // 3 == 0 = true, 125 % 3 == 0 = false, 125 % 4 == 0 = false, 125 % 5 == 0 = true */
+//primeFactorOfNum1 = currentFactorOfNum1;    // 2, 2, 3, 5
+//primeFactorOfNum2 = currentFactorOfNum2;
+//num2 = num2 / currentFactorOfNum2;
+//num1 = num1 / currentFactorOfNum1;      // 750, 750 / 2 = 375, 375 / 3 = 125, 125 / 5 = 25,
+//                        System.out.println(primeFactorOfNum1);
+//                    } else {
+//currentFactorOfNum1++;  // currentFactorOfNum1 = 3,4,5
+//        }
+//        }
+//
+//        }
+//        }
+
+
+//int num1 = sc.nextInt();
+//int num2 = sc.nextInt();
+//int HCF = 0;
+//
+//         if(num1 > num2){
+//        for(int i = 1; i <= num1; i++){
+//        if(num1 % i == 0 && num2 % i == 0){
+//HCF = i;
+//                 }
+//                         }
+//                         System.out.println(HCF);
+//         }else if(num2 > num1){
+//        for(int i =1; i <= num2; i++){
+//        if(num2 % i == 0 && num1 % i == 0){
+//HCF = i;
+//                     }
+//                             }
+//                             System.out.println(HCF);
+//         }else if( num1 == num2){
+//        for(int i = 1; i <= num1; i++){
+//        if(num1 % i == 0){
+//HCF = i;
+//                 }
+//                         }
+//                         System.out.println(HCF);
+//         }else if(num1 == 0 || num2 == 0){
+//        System.out.println(HCF);
+//         }
+//
