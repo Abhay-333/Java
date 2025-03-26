@@ -1,4 +1,4 @@
-package LeetCode;
+package NonLeetCodeQuestion;
 
 public class convertBinarytoDecimal {
     public static void main(String[] args) {
@@ -25,5 +25,8 @@ public class convertBinarytoDecimal {
             i++;
         }
         System.out.println(result);
+
+        System.out.println(43 >> 5);    // right shift bitwise operator
+        System.out.println(43 <<  5);   // left shift bitwise operator
     }
 }

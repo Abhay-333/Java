@@ -1,4 +1,4 @@
-package LeetCode;
+package NonLeetCodeQuestion;
 
 public class convertDecimalToBinary {
     public static void main(String[] args) {
