@@ -7,3 +7,4 @@ public class ithBitsetOrNot {
         System.out.println((n & (1 << i)) == 0 ? "not set" : "set");    //This means left shift the number 1 by i positions.
     }
 }
+
