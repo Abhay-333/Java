@@ -1,16 +1,21 @@
 package Recursion;
 
+import java.util.Arrays;
+
 public class GCDOfArrayElements {
 
     public static int GCD(int[] nums) {
+        Arrays.sort(nums);
+        System.out.println(Arrays.toString(nums));
+        int min = nums[0], max = nums[nums.length-1];
 
-        while (nums[nums.length-1] != 0) {
-            int temp = nums[nums.length-1];
-            nums[nums.length-1] = nums[0] % nums[nums.length-1];
-            nums[0] = temp;
+        while(max != 0){
+            int temp = max;
+            max = min % max;
+            min = temp;
         }
-        if(nums[0] == 0) return nums[nums.length-1];
-        return nums[0];
+        if(max == 0) return min;
+        return max;
     }
 
     public static void main(String[] args) {
