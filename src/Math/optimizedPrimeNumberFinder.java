@@ -15,7 +15,7 @@ public class optimizedPrimeNumberFinder {
 
     public static void main(String[] args) {
         int n = 11;
-        for (int i = 1; i <= 100; i++) {
+        for (int i = 1; i <= n; i++) {
             if(prime(i)){
                 System.out.print(i + " ");
             }
