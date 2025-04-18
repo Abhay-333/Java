@@ -15,7 +15,7 @@ public class KthFactor {
 
         List<Integer> list1 = new ArrayList<>();
 
-        for (int i = 2; i * i < n; i++) {
+        for (int i = 2; i * i <= n; i++) {
             if (n % i == 0) {
                 list1.add(i);
                 if(i*i != n){
@@ -25,7 +25,7 @@ public class KthFactor {
         }
         list1.sort(null);
         System.out.println(list1);
-        list1.size();
+        if(list1.size() < k) return -1;
         return list1.get(k-1);
     }
 
