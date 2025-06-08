@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Demo1 {
     public static void main(String[] args) {
         System.out.println("Hello World");
@@ -9,5 +11,6 @@ public class Demo1 {
 
         String c = "23";
         System.out.println(32 + c + 52 + 62);   //Output: 32235262
+
     }
 }

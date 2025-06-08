@@ -7,6 +7,9 @@ import java.util.HashMap;
 public class TrappingRainWater {
 
     public static int optimisedCode2(int arr[]) {
+        // By Using Two Pointer
+        // Time Complexity: O(n)
+        // Space Complexity: O(1)
         int waterCounter = 0, left = 0, right = arr.length - 1, leftMax = arr[left], rightMax = arr[right];
 
         while (left <= right) {
