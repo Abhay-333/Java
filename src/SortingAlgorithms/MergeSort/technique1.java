@@ -39,6 +39,7 @@ public class technique1 {
             mid += 1;
             arr2[i] = arr[mid];
         }
+
         int i = 0, j = 0, k = 0;
         Arrays.sort(arr1);
         Arrays.sort(arr2);
