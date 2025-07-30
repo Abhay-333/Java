@@ -1,6 +1,4 @@
-package BinarySearch;
-
-import Arrays.Questions.binarySearch;
+package BinarySearch.Level1;
 
 public class SearchInsertPosition {
 

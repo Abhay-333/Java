@@ -1,6 +1,4 @@
-package BinarySearch;
-
-import java.sql.SQLOutput;
+package BinarySearch.Level1;
 
 public class recallingBinarySearch {
     public static int search(int arr[], int target) {

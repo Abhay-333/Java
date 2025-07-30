@@ -1,4 +1,4 @@
-package BinarySearch;
+package BinarySearch.Level1;
 
 public class findFirstAndLastPositionOfElementInSortedArray {
     public static int firstOccurence(int arr[], int start, int end, int target) {
