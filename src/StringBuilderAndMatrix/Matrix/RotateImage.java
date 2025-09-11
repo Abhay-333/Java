@@ -16,12 +16,10 @@ public class RotateImage {
         }
 
         for (int i = 0; i < arr.length; i++) {
-            for (int j = arr[i].length - 1; j >= 0; j--) {
-                if (j < arr[i].length / 2) {
-                    int temp = arr[i][j];
-                    arr[i][j] = arr[i][arr.length - 1 - j];
-                    arr[i][arr.length - 1 - j] = temp;
-                }
+            for (int j = 0; j < arr[i].length / 2; j++) {
+                int temp = arr[i][j];
+                arr[i][j] = arr[i][arr.length - 1 - j];
+                arr[i][arr.length - 1 - j] = temp;
                 System.out.print(arr[i][j] + " ");
             }
             System.out.println();
